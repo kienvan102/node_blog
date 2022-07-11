@@ -1,8 +1,8 @@
-const newsRouter = require('./news')
-const siteRouter = require('./site')
-function route(app){
-    app.use('/news', newsRouter)
-    app.use('/', siteRouter)
+const newsRouter = require('./news');
+const siteRouter = require('./site');
+function route(app) {
+    app.use('/news', newsRouter);
+    app.use('/', siteRouter);
     // app.get('/submitForm', (req,res) => {
     //     res.render('submitForm')
     // })
@@ -12,8 +12,6 @@ function route(app){
 
     //     res.send('')
     // })
-
-
 }
 
 module.exports = route;
